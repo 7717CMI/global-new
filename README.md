@@ -1,6 +1,6 @@
-# Global Shovel Market Analytics Dashboard
+# Global Group Health Insurance Market Analytics Dashboard
 
-A modern React-based dashboard for global shovel market analytics. Built with React, TypeScript, Vite, and Tailwind CSS.
+A modern React-based dashboard for global group health insurance market analytics. Built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Features
 

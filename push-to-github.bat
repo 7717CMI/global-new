@@ -1,4 +1,8 @@
 @echo off
+echo Setting up Git configuration...
+git config --global user.email "coherentdrive@gmail.com"
+git config --global user.name "7717CMI"
+
 echo Initializing Git repository...
 git init
 
@@ -15,6 +19,8 @@ echo Adding remote repository...
 git remote add origin https://github.com/7717CMI/global-new.git
 
 echo Pushing to GitHub...
+echo You will be prompted for your GitHub credentials...
+echo NOTE: Use your Personal Access Token as password, not your GitHub password
 git push -u origin main
 
 echo.

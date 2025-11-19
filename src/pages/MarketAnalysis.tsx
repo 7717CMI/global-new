@@ -1091,23 +1091,6 @@ export function MarketAnalysis({ onNavigate }: MarketAnalysisProps) {
                   options={availableCountries}
                 />
               )}
-              <div className="w-full">
-                <label className="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2">
-                  Market Evaluation
-                </label>
-                <select
-                  value={filters.marketEvaluation}
-                  onChange={(e) => setFilters({ ...filters, marketEvaluation: e.target.value as MarketEvaluationType })}
-                  className={`w-full px-4 py-2 rounded-lg border ${
-                    isDark 
-                      ? 'bg-navy-card border-navy-light text-text-primary-dark hover:border-electric-blue' 
-                      : 'bg-white border-gray-300 text-text-primary-light hover:border-electric-blue'
-                  } focus:outline-none focus:ring-2 focus:ring-electric-blue transition-all`}
-                >
-                  <option value="By Value">By Value</option>
-                  <option value="By Volume">By Volume</option>
-                </select>
-              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
@@ -1195,12 +1178,6 @@ export function MarketAnalysis({ onNavigate }: MarketAnalysisProps) {
                         </span>
                       </div>
                     )}
-                    <div>
-                      <span className="font-medium text-text-secondary-light dark:text-text-secondary-dark">Evaluation:</span>
-                      <span className="ml-2 font-semibold text-electric-blue dark:text-cyan-accent">
-                        {filters.marketEvaluation}
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>
