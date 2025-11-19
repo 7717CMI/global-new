@@ -158,7 +158,6 @@ export function CrossSegmentStackedBarChart({
         <Tooltip 
           content={<CustomTooltip />} 
           cursor={{ fill: isDark ? 'rgba(99, 179, 237, 0.1)' : 'rgba(59, 130, 246, 0.1)' }}
-          position={{ x: 'auto', y: 'auto' }}
           allowEscapeViewBox={{ x: true, y: true }}
           wrapperStyle={{ zIndex: 1000 }}
         />
